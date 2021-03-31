@@ -1,0 +1,1529 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Frame | quantum-tensors</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantum-tensors</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_frame_.html">&quot;Frame&quot;</a>
+				</li>
+				<li>
+					<a href="_frame_.frame.html">Frame</a>
+				</li>
+			</ul>
+			<h1>Class Frame</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Frame class</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>remarks</dt>
+						<dd><p>Merge between Photons and QuantumFrame from QG2</p>
+						</dd>
+						<dt>todo</dt>
+						<dd><p>Think about how to pass the operators in a better way</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Frame</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_frame_.frame.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_frame_.frame.html#absorptions" class="tsd-kind-icon">absorptions</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_frame_.frame.html#dimx" class="tsd-kind-icon">dimX</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_frame_.frame.html#dimy" class="tsd-kind-icon">dimY</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_frame_.frame.html#probafter" class="tsd-kind-icon">prob<wbr>After</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_frame_.frame.html#probbefore" class="tsd-kind-icon">prob<wbr>Before</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_frame_.frame.html#probpropagated" class="tsd-kind-icon">prob<wbr>Propagated</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_frame_.frame.html#probthreshold" class="tsd-kind-icon">prob<wbr>Threshold</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_frame_.frame.html#sim" class="tsd-kind-icon">sim</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_frame_.frame.html#vector" class="tsd-kind-icon">vector</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_frame_.frame.html#ket" class="tsd-kind-icon">ket</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_frame_.frame.html#ketcomponents" class="tsd-kind-icon">ket<wbr>Components</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_frame_.frame.html#nphotons" class="tsd-kind-icon">n<wbr>Photons</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_frame_.frame.html#particles" class="tsd-kind-icon">particles</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_frame_.frame.html#polarizationsuperpositions" class="tsd-kind-icon">polarization<wbr>Superpositions</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_frame_.frame.html#probability" class="tsd-kind-icon">probability</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_frame_.frame.html#sizex" class="tsd-kind-icon">sizeX</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_frame_.frame.html#sizey" class="tsd-kind-icon">sizeY</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_frame_.frame.html#totalprobabilityloss" class="tsd-kind-icon">total<wbr>Probability<wbr>Loss</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_frame_.frame.html#actonsinglephotons" class="tsd-kind-icon">act<wbr>OnSingle<wbr>Photons</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_frame_.frame.html#addphotonfromindicator" class="tsd-kind-icon">add<wbr>Photon<wbr>From<wbr>Indicator</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_frame_.frame.html#aggregatepolarization" class="tsd-kind-icon">aggregate<wbr>Polarization</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_frame_.frame.html#copy" class="tsd-kind-icon">copy</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_frame_.frame.html#ketstring" class="tsd-kind-icon">ket<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_frame_.frame.html#measureabsorptionatoperator" class="tsd-kind-icon">measure<wbr>Absorption<wbr>AtOperator</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_frame_.frame.html#normalize" class="tsd-kind-icon">normalize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_frame_.frame.html#propagateandinteract" class="tsd-kind-icon">propagate<wbr>And<wbr>Interact</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_frame_.frame.html#propagatephotons" class="tsd-kind-icon">propagate<wbr>Photons</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_frame_.frame.html#propagatephotonswithoperator" class="tsd-kind-icon">propagate<wbr>Photons<wbr>With<wbr>Operator</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_frame_.frame.html#totalintensitypertile" class="tsd-kind-icon">total<wbr>Intensity<wbr>Per<wbr>Tile</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_frame_.frame.html#vectorindicesforparticle" class="tsd-kind-icon">vector<wbr>Indices<wbr>For<wbr>Particle</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_frame_.frame.html#vectorposdirindicesforparticle" class="tsd-kind-icon">vector<wbr>Pos<wbr>Dir<wbr>Indices<wbr>For<wbr>Particle</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_frame_.frame.html#vectorposindicesforparticle" class="tsd-kind-icon">vector<wbr>Pos<wbr>Indices<wbr>For<wbr>Particle</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_frame_.frame.html#vectorvaluedmeasurement" class="tsd-kind-icon">vector<wbr>Valued<wbr>Measurement</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_frame_.frame.html#localizeoperator" class="tsd-kind-icon">localize<wbr>Operator</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_frame_.frame.html#propagator" class="tsd-kind-icon">propagator</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_frame_.frame.html#singlephotoninteraction" class="tsd-kind-icon">single<wbr>Photon<wbr>Interaction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_frame_.frame.html#singlephotoninteractiondiff" class="tsd-kind-icon">single<wbr>Photon<wbr>Interaction<wbr>Diff</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_frame_.frame.html#vectorfromindicator" class="tsd-kind-icon">vector<wbr>From<wbr>Indicator</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Frame<span class="tsd-signature-symbol">(</span>sim<span class="tsd-signature-symbol">: </span><a href="_simulation_.simulation.html" class="tsd-signature-type">Simulation</a>, vector<span class="tsd-signature-symbol">?: </span><a href="_vector_.vector.html" class="tsd-signature-type">Vector</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_frame_.frame.html" class="tsd-signature-type">Frame</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L31">Frame.ts:31</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a board for photons.
+									Mostly for internal use.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sim: <a href="_simulation_.simulation.html" class="tsd-signature-type">Simulation</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> vector: <a href="_vector_.vector.html" class="tsd-signature-type">Vector</a><span class="tsd-signature-symbol"> = new Vector([], [])</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Vector with [x1, y1, dir1, pol1, ..., xn, yn, dirn, poln].</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_frame_.frame.html" class="tsd-signature-type">Frame</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="absorptions" class="tsd-anchor"></a>
+					<h3>absorptions</h3>
+					<div class="tsd-signature tsd-kind-icon">absorptions<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_interfaces_.iabsorption.html" class="tsd-signature-type">IAbsorption</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L25">Frame.ts:25</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="dimx" class="tsd-anchor"></a>
+					<h3>dimX</h3>
+					<div class="tsd-signature tsd-kind-icon">dimX<span class="tsd-signature-symbol">:</span> <a href="_dimension_.dimension.html" class="tsd-signature-type">Dimension</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L21">Frame.ts:21</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="dimy" class="tsd-anchor"></a>
+					<h3>dimY</h3>
+					<div class="tsd-signature tsd-kind-icon">dimY<span class="tsd-signature-symbol">:</span> <a href="_dimension_.dimension.html" class="tsd-signature-type">Dimension</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L22">Frame.ts:22</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="probafter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> prob<wbr>After</h3>
+					<div class="tsd-signature tsd-kind-icon">prob<wbr>After<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L30">Frame.ts:30</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="probbefore" class="tsd-anchor"></a>
+					<h3>prob<wbr>Before</h3>
+					<div class="tsd-signature tsd-kind-icon">prob<wbr>Before<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L28">Frame.ts:28</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="probpropagated" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> prob<wbr>Propagated</h3>
+					<div class="tsd-signature tsd-kind-icon">prob<wbr>Propagated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L29">Frame.ts:29</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="probthreshold" class="tsd-anchor"></a>
+					<h3>prob<wbr>Threshold</h3>
+					<div class="tsd-signature tsd-kind-icon">prob<wbr>Threshold<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0.000001</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L31">Frame.ts:31</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="sim" class="tsd-anchor"></a>
+					<h3>sim</h3>
+					<div class="tsd-signature tsd-kind-icon">sim<span class="tsd-signature-symbol">:</span> <a href="_simulation_.simulation.html" class="tsd-signature-type">Simulation</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L23">Frame.ts:23</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="vector" class="tsd-anchor"></a>
+					<h3>vector</h3>
+					<div class="tsd-signature tsd-kind-icon">vector<span class="tsd-signature-symbol">:</span> <a href="_vector_.vector.html" class="tsd-signature-type">Vector</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L24">Frame.ts:24</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="ket" class="tsd-anchor"></a>
+					<h3>ket</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> ket<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_vector_.vector.html" class="tsd-signature-type">Vector</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L410">Frame.ts:410</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Alias of vector</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>remark</dt>
+									<dd><p>Moved from QuantumFrame</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_vector_.vector.html" class="tsd-signature-type">Vector</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="ketcomponents" class="tsd-anchor"></a>
+					<h3>ket<wbr>Components</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> ketComponents<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_interfaces_.iketcomponentframe.html" class="tsd-signature-type">IKetComponentFrame</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L427">Frame.ts:427</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>remark</dt>
+									<dd><p>from QuantumFrame</p>
+									</dd>
+									<dt>todo</dt>
+									<dd><p>Role of function unclear, see with Piotr</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_interfaces_.iketcomponentframe.html" class="tsd-signature-type">IKetComponentFrame</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="nphotons" class="tsd-anchor"></a>
+					<h3>n<wbr>Photons</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> nPhotons<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L67">Frame.ts:67</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The total number of photons.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="particles" class="tsd-anchor"></a>
+					<h3>particles</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> particles<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_interfaces_.iparticle.html" class="tsd-signature-type">IParticle</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L469">Frame.ts:469</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>remark</dt>
+									<dd><p>from QuantumFrame, non interesting gluecode</p>
+									</dd>
+									<dt>note</dt>
+									<dd><p>Coord and Particle will need a serious rewrite</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_interfaces_.iparticle.html" class="tsd-signature-type">IParticle</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="polarizationsuperpositions" class="tsd-anchor"></a>
+					<h3>polarization<wbr>Superpositions</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> polarizationSuperpositions<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_interfaces_.iparticle.html" class="tsd-signature-type">IParticle</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L459">Frame.ts:459</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>remark</dt>
+									<dd><p>from QuantumFrame, non interesting gluecode</p>
+									</dd>
+									<dt>note</dt>
+									<dd><p>Coord and Particle will need a serious rewrite</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_interfaces_.iparticle.html" class="tsd-signature-type">IParticle</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="probability" class="tsd-anchor"></a>
+					<h3>probability</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> probability<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L419">Frame.ts:419</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>remark</dt>
+									<dd><p>Moved from QuantumFrame
+										State vector norm.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>Frame vector norm squared</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="sizex" class="tsd-anchor"></a>
+					<h3>sizeX</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> sizeX<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L53">Frame.ts:53</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Size x (&#39;width&#39;) of the board.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="sizey" class="tsd-anchor"></a>
+					<h3>sizeY</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> sizeY<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L60">Frame.ts:60</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Size y (&#39;height&#39;) of the board.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="totalprobabilityloss" class="tsd-anchor"></a>
+					<h3>total<wbr>Probability<wbr>Loss</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> totalProbabilityLoss<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L451">Frame.ts:451</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>remark</dt>
+									<dd><p>Moved from QuantumFrame
+										should be same as this.probAfter</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="actonsinglephotons" class="tsd-anchor"></a>
+					<h3>act<wbr>OnSingle<wbr>Photons</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">act<wbr>OnSingle<wbr>Photons<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_frame_.frame.html" class="tsd-signature-type">Frame</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L324">Frame.ts:324</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Act on single photons with the precomputed globalOperator.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>remark</dt>
+									<dd><p>Absorption for states with n&gt;1 photons is broken.</p>
+										<ul>
+											<li>it tracks only a fixed-number of photons subspace.</li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_frame_.frame.html" class="tsd-signature-type">Frame</a></h4>
+							<p>Itself, for chaining.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addphotonfromindicator" class="tsd-anchor"></a>
+					<h3>add<wbr>Photon<wbr>From<wbr>Indicator</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Photon<wbr>From<wbr>Indicator<span class="tsd-signature-symbol">(</span>posX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, posY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, dir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, pol<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_frame_.frame.html" class="tsd-signature-type">Frame</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L128">Frame.ts:128</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add one more photon to the state, using <a href="_photons_.photons.html#vectorfromindicator">Photons.vectorFromIndicator</a>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>posX: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Position of the photon, x.</p>
+									</div>
+								</li>
+								<li>
+									<h5>posY: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Position of the photon, y.</p>
+									</div>
+								</li>
+								<li>
+									<h5>dir: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Direction from [&#39;&gt;&#39;, &#39;^&#39;, &#39;&lt;&#39;, &#39;v].</p>
+									</div>
+								</li>
+								<li>
+									<h5>pol: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Polarization from [&#39;H&#39;, &#39;V&#39;, &#39;D&#39;, &#39;A&#39;, &#39;L&#39;, &#39;R&#39;].</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_frame_.frame.html" class="tsd-signature-type">Frame</a></h4>
+							<p>Itself, for chaining.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="aggregatepolarization" class="tsd-anchor"></a>
+					<h3>aggregate<wbr>Polarization</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">aggregate<wbr>Polarization<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_interfaces_.iparticle.html" class="tsd-signature-type">IParticle</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L340">Frame.ts:340</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Combine H and V polarization, to
+									Right now kind od dirty, but should work</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>todo</dt>
+									<dd><p>Interface is clunky and restrictred to 1 particle.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_interfaces_.iparticle.html" class="tsd-signature-type">IParticle</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>Angles 0-360, starting from --&gt; and moving counterclockwise
+							|psi&gt; = (are + i aim) |H&gt; + (bre + i bim) |V&gt;</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="copy" class="tsd-anchor"></a>
+					<h3>copy</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">copy<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_frame_.frame.html" class="tsd-signature-type">Frame</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L75">Frame.ts:75</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>todo</dt>
+									<dd><p>Check that the globalOperator doesn&#39;t hammer performance.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_frame_.frame.html" class="tsd-signature-type">Frame</a></h4>
+							<p>A deep copy of the same object.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ketstring" class="tsd-anchor"></a>
+					<h3>ket<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">ket<wbr>String<span class="tsd-signature-symbol">(</span>complexFormat<span class="tsd-signature-symbol">?: </span><a href="../modules/_complex_.html#complexformat" class="tsd-signature-type">ComplexFormat</a>, precision<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L402">Frame.ts:402</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Generates a string for kets.
+									See <a href="_vector_.vector.html#tostring">Vector.toString</a> for formatting options.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> complexFormat: <a href="../modules/_complex_.html#complexformat" class="tsd-signature-type">ComplexFormat</a><span class="tsd-signature-symbol"> = &quot;cartesian&quot;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> precision: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 2</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Float precision.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>A ket string, e.g. (0.71 +0.00i) |3,1,&gt;,V⟩ + (0.00 +0.71i) |2,2,v,V⟩.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="measureabsorptionatoperator" class="tsd-anchor"></a>
+					<h3>measure<wbr>Absorption<wbr>AtOperator</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">measure<wbr>Absorption<wbr>AtOperator<span class="tsd-signature-symbol">(</span>op<span class="tsd-signature-symbol">: </span><a href="../interfaces/_interfaces_.ixyoperator.html" class="tsd-signature-type">IXYOperator</a>, photonId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L243">Frame.ts:243</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Measure the absolute absorbtion on a given tile.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>op: <a href="../interfaces/_interfaces_.ixyoperator.html" class="tsd-signature-type">IXYOperator</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Operator, assumed to be with dimensions [pol, dir].</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> photonId: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>Probability lost at tile (x, y) after applying the operator.
+							Does not change the photon object.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="normalize" class="tsd-anchor"></a>
+					<h3>normalize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">normalize<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_frame_.frame.html" class="tsd-signature-type">Frame</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L83">Frame.ts:83</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Normalize</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_frame_.frame.html" class="tsd-signature-type">Frame</a></h4>
+							<p>Itself, for chaining.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="propagateandinteract" class="tsd-anchor"></a>
+					<h3>propagate<wbr>And<wbr>Interact</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">propagate<wbr>And<wbr>Interact<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L477">Frame.ts:477</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>remark</dt>
+									<dd><p>moved from QuantumFrame</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="propagatephotons" class="tsd-anchor"></a>
+					<h3>propagate<wbr>Photons</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">propagate<wbr>Photons<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_frame_.frame.html" class="tsd-signature-type">Frame</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L187">Frame.ts:187</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Propagate all particles, hardcoded.
+									See <a href="_frame_.frame.html#propagatephotonswithoperator">propagatePhotonsWithOperator</a> for a reference.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_frame_.frame.html" class="tsd-signature-type">Frame</a></h4>
+							<p>Itself, for chaining.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="propagatephotonswithoperator" class="tsd-anchor"></a>
+					<h3>propagate<wbr>Photons<wbr>With<wbr>Operator</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">propagate<wbr>Photons<wbr>With<wbr>Operator<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_frame_.frame.html" class="tsd-signature-type">Frame</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L173">Frame.ts:173</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Propagate all particles, using {@link createPhotonPropagator}.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>remarks</dt>
+									<dd><p>lets stick with Y means down conveniton and remove clutter</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_frame_.frame.html" class="tsd-signature-type">Frame</a></h4>
+							<p>Itself, for chaining.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="totalintensitypertile" class="tsd-anchor"></a>
+					<h3>total<wbr>Intensity<wbr>Per<wbr>Tile</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">total<wbr>Intensity<wbr>Per<wbr>Tile<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_interfaces_.itileintensity.html" class="tsd-signature-type">ITileIntensity</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L374">Frame.ts:374</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Shows probability of photons.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>todo</dt>
+									<dd><p>Create probability for any number of photons.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_interfaces_.itileintensity.html" class="tsd-signature-type">ITileIntensity</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="vectorindicesforparticle" class="tsd-anchor"></a>
+					<h3>vector<wbr>Indices<wbr>For<wbr>Particle</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">vector<wbr>Indices<wbr>For<wbr>Particle<span class="tsd-signature-symbol">(</span>i<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L514">Frame.ts:514</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Dimension indices for particle i, for [posX, posY, dir, pol].</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>note</dt>
+									<dd><p>For internal use.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>i: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Photon id, from [0, ..., nPhotons - 1]</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>E.g. for 1: [4, 5, 6, 7]</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="vectorposdirindicesforparticle" class="tsd-anchor"></a>
+					<h3>vector<wbr>Pos<wbr>Dir<wbr>Indices<wbr>For<wbr>Particle</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">vector<wbr>Pos<wbr>Dir<wbr>Indices<wbr>For<wbr>Particle<span class="tsd-signature-symbol">(</span>i<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L524">Frame.ts:524</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Dimension indices for particle i, for [posX, posY, dir].</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>note</dt>
+									<dd><p>For internal use.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>i: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Photon id, from [0, ..., nPhotons - 1]</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>E.g. for 1: [4, 5, 6]</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="vectorposindicesforparticle" class="tsd-anchor"></a>
+					<h3>vector<wbr>Pos<wbr>Indices<wbr>For<wbr>Particle</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">vector<wbr>Pos<wbr>Indices<wbr>For<wbr>Particle<span class="tsd-signature-symbol">(</span>i<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L534">Frame.ts:534</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Dimension indices for particle i, for [posX, posY].</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>note</dt>
+									<dd><p>For internal use.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>i: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Photon id, from [0, ..., nPhotons - 1]</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>E.g. for 1: [4, 5]</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="vectorvaluedmeasurement" class="tsd-anchor"></a>
+					<h3>vector<wbr>Valued<wbr>Measurement</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">vector<wbr>Valued<wbr>Measurement<span class="tsd-signature-symbol">(</span>op<span class="tsd-signature-symbol">: </span><a href="../interfaces/_interfaces_.ixyoperator.html" class="tsd-signature-type">IXYOperator</a>, photonId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L265">Frame.ts:265</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Demo of measurement of one particle
+										So far the basis is FIXED, so it won&#39;t give corrent results with operators absorbing in a basis
+										that does not commute with this basis.
+									Vide <a href="_frame_.frame.html#measureabsorptionatoperator">measureAbsorptionAtOperator</a> as the structure is</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>op: <a href="../interfaces/_interfaces_.ixyoperator.html" class="tsd-signature-type">IXYOperator</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> photonId: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<p>Only measurement (zeros excluded). Conditional state is NOT normalized (to avoid issues with division by )
+							FIXME: No return type</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="localizeoperator" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> localize<wbr>Operator</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">localize<wbr>Operator<span class="tsd-signature-symbol">(</span>sizeX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, sizeY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, op<span class="tsd-signature-symbol">: </span><a href="../interfaces/_interfaces_.ixyoperator.html" class="tsd-signature-type">IXYOperator</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_operator_.operator.html" class="tsd-signature-type">Operator</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L548">Frame.ts:548</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create an operator for a particular place, projecting only on the particular position.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sizeX: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Board size, x.</p>
+									</div>
+								</li>
+								<li>
+									<h5>sizeY: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Board size, y.</p>
+									</div>
+								</li>
+								<li>
+									<h5>op: <a href="../interfaces/_interfaces_.ixyoperator.html" class="tsd-signature-type">IXYOperator</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Operator, assumed to be with dimensions [pol, dir].</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_operator_.operator.html" class="tsd-signature-type">Operator</a></h4>
+							<p>An operator [dimX, dimY, pol, dir].</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="propagator" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> propagator</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">propagator<span class="tsd-signature-symbol">(</span>sizeX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, sizeY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_operator_.operator.html" class="tsd-signature-type">Operator</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L155">Frame.ts:155</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a propagator, given the board size.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>remarks</dt>
+									<dd><p>lets stick with Y means down conveniton and remove clutter</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sizeX: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Board size, x.</p>
+									</div>
+								</li>
+								<li>
+									<h5>sizeY: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Board size, y.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_operator_.operator.html" class="tsd-signature-type">Operator</a></h4>
+							<p>An operator, with dimensions [dimX, dimY, {@link Dimension.direction()}].</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="singlephotoninteraction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> single<wbr>Photon<wbr>Interaction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">single<wbr>Photon<wbr>Interaction<span class="tsd-signature-symbol">(</span>sizeX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, sizeY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, opsWithPos<span class="tsd-signature-symbol">: </span><a href="../interfaces/_interfaces_.ixyoperator.html" class="tsd-signature-type">IXYOperator</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_operator_.operator.html" class="tsd-signature-type">Operator</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L588">Frame.ts:588</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Turn an list of operators in a complete one-photon iteraction operator for the board.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>remark</dt>
+									<dd><p>Some space for improvement with avoiding identity (direct sum structure),
+										vide <a href="_operator_.operator.html#mulvecpartial">Operator.mulVecPartial</a>.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sizeX: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Board size, x.</p>
+									</div>
+								</li>
+								<li>
+									<h5>sizeY: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Board size, y.</p>
+									</div>
+								</li>
+								<li>
+									<h5>opsWithPos: <a href="../interfaces/_interfaces_.ixyoperator.html" class="tsd-signature-type">IXYOperator</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A list of [x, y, operator with [dir, pol]].</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_operator_.operator.html" class="tsd-signature-type">Operator</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="singlephotoninteractiondiff" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> single<wbr>Photon<wbr>Interaction<wbr>Diff</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">single<wbr>Photon<wbr>Interaction<wbr>Diff<span class="tsd-signature-symbol">(</span>sizeX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, sizeY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, opsWithPos<span class="tsd-signature-symbol">: </span><a href="../interfaces/_interfaces_.ixyoperator.html" class="tsd-signature-type">IXYOperator</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_operator_.operator.html" class="tsd-signature-type">Operator</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L560">Frame.ts:560</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Turn an list of operators in a complete one-photon iteraction operator for the board (U - Id).</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sizeX: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Board size, x.</p>
+									</div>
+								</li>
+								<li>
+									<h5>sizeY: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Board size, y.</p>
+									</div>
+								</li>
+								<li>
+									<h5>opsWithPos: <a href="../interfaces/_interfaces_.ixyoperator.html" class="tsd-signature-type">IXYOperator</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A list of [x, y, operator with [dir, pol]].</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_operator_.operator.html" class="tsd-signature-type">Operator</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="vectorfromindicator" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> vector<wbr>From<wbr>Indicator</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">vector<wbr>From<wbr>Indicator<span class="tsd-signature-symbol">(</span>sizeX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, sizeY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, posX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, posY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, dir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, pol<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_vector_.vector.html" class="tsd-signature-type">Vector</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stared/quantum-tensors/blob/91fce1b/src/Frame.ts#L100">Frame.ts:100</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a single photon vector.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>todo</dt>
+									<dd><p>Aupport &#39;D&#39;, &#39;A&#39;, &#39;L&#39; and &#39;R&#39;.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sizeX: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Board size, x.</p>
+									</div>
+								</li>
+								<li>
+									<h5>sizeY: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Board size, y.</p>
+									</div>
+								</li>
+								<li>
+									<h5>posX: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Position of the photon, x.</p>
+									</div>
+								</li>
+								<li>
+									<h5>posY: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Position of the photon, y.</p>
+									</div>
+								</li>
+								<li>
+									<h5>dir: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>pol: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Polarization from [&#39;H&#39;, &#39;V&#39;, &#39;D&#39;, &#39;A&#39;, &#39;L&#39;, &#39;R&#39;].</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_vector_.vector.html" class="tsd-signature-type">Vector</a></h4>
+							<p>A vector [dimX, DimY, dir, pol], does not modify the object.</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_basis_.html">&quot;<wbr>Basis&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_bell_.html">&quot;<wbr>Bell&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_circuit_.html">&quot;<wbr>Circuit&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_complex_.html">&quot;<wbr>Complex&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_constants_.html">&quot;<wbr>Constants&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_dimension_.html">&quot;<wbr>Dimension&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_elements_.html">&quot;<wbr>Elements&quot;</a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_frame_.html">&quot;<wbr>Frame&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_gates_.html">&quot;<wbr>Gates&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_incoherentlight_.html">&quot;<wbr>Incoherent<wbr>Light&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_measurement_.html">&quot;<wbr>Measurement&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_operator_.html">&quot;<wbr>Operator&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_operatorentry_.html">&quot;<wbr>Operator<wbr>Entry&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_ops_.html">&quot;<wbr>Ops&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_photons_.html">&quot;<wbr>Photons&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_simulation_.html">&quot;<wbr>Simulation&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_vector_.html">&quot;<wbr>Vector&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_vectorentry_.html">&quot;<wbr>Vector<wbr>Entry&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_helpers_.html">&quot;helpers&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_index_.html">&quot;index&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_interfaces_.html">&quot;interfaces&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_frame_.frame.html" class="tsd-kind-icon">Frame</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_frame_.frame.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_frame_.frame.html#absorptions" class="tsd-kind-icon">absorptions</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_frame_.frame.html#dimx" class="tsd-kind-icon">dimX</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_frame_.frame.html#dimy" class="tsd-kind-icon">dimY</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_frame_.frame.html#probafter" class="tsd-kind-icon">prob<wbr>After</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_frame_.frame.html#probbefore" class="tsd-kind-icon">prob<wbr>Before</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_frame_.frame.html#probpropagated" class="tsd-kind-icon">prob<wbr>Propagated</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_frame_.frame.html#probthreshold" class="tsd-kind-icon">prob<wbr>Threshold</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_frame_.frame.html#sim" class="tsd-kind-icon">sim</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_frame_.frame.html#vector" class="tsd-kind-icon">vector</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_frame_.frame.html#ket" class="tsd-kind-icon">ket</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_frame_.frame.html#ketcomponents" class="tsd-kind-icon">ket<wbr>Components</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_frame_.frame.html#nphotons" class="tsd-kind-icon">n<wbr>Photons</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_frame_.frame.html#particles" class="tsd-kind-icon">particles</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_frame_.frame.html#polarizationsuperpositions" class="tsd-kind-icon">polarization<wbr>Superpositions</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_frame_.frame.html#probability" class="tsd-kind-icon">probability</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_frame_.frame.html#sizex" class="tsd-kind-icon">sizeX</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_frame_.frame.html#sizey" class="tsd-kind-icon">sizeY</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_frame_.frame.html#totalprobabilityloss" class="tsd-kind-icon">total<wbr>Probability<wbr>Loss</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_frame_.frame.html#actonsinglephotons" class="tsd-kind-icon">act<wbr>OnSingle<wbr>Photons</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_frame_.frame.html#addphotonfromindicator" class="tsd-kind-icon">add<wbr>Photon<wbr>From<wbr>Indicator</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_frame_.frame.html#aggregatepolarization" class="tsd-kind-icon">aggregate<wbr>Polarization</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_frame_.frame.html#copy" class="tsd-kind-icon">copy</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_frame_.frame.html#ketstring" class="tsd-kind-icon">ket<wbr>String</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_frame_.frame.html#measureabsorptionatoperator" class="tsd-kind-icon">measure<wbr>Absorption<wbr>AtOperator</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_frame_.frame.html#normalize" class="tsd-kind-icon">normalize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_frame_.frame.html#propagateandinteract" class="tsd-kind-icon">propagate<wbr>And<wbr>Interact</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_frame_.frame.html#propagatephotons" class="tsd-kind-icon">propagate<wbr>Photons</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_frame_.frame.html#propagatephotonswithoperator" class="tsd-kind-icon">propagate<wbr>Photons<wbr>With<wbr>Operator</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_frame_.frame.html#totalintensitypertile" class="tsd-kind-icon">total<wbr>Intensity<wbr>Per<wbr>Tile</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_frame_.frame.html#vectorindicesforparticle" class="tsd-kind-icon">vector<wbr>Indices<wbr>For<wbr>Particle</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_frame_.frame.html#vectorposdirindicesforparticle" class="tsd-kind-icon">vector<wbr>Pos<wbr>Dir<wbr>Indices<wbr>For<wbr>Particle</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_frame_.frame.html#vectorposindicesforparticle" class="tsd-kind-icon">vector<wbr>Pos<wbr>Indices<wbr>For<wbr>Particle</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_frame_.frame.html#vectorvaluedmeasurement" class="tsd-kind-icon">vector<wbr>Valued<wbr>Measurement</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_frame_.frame.html#localizeoperator" class="tsd-kind-icon">localize<wbr>Operator</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_frame_.frame.html#propagator" class="tsd-kind-icon">propagator</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_frame_.frame.html#singlephotoninteraction" class="tsd-kind-icon">single<wbr>Photon<wbr>Interaction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_frame_.frame.html#singlephotoninteractiondiff" class="tsd-kind-icon">single<wbr>Photon<wbr>Interaction<wbr>Diff</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_frame_.frame.html#vectorfromindicator" class="tsd-kind-icon">vector<wbr>From<wbr>Indicator</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_frame_.html#iddirpol" class="tsd-kind-icon">id<wbr>Dir<wbr>Pol</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
